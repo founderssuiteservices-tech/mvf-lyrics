@@ -3,21 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MVF — Lyric Video Samples</title>
-<meta name="description" content="Lyric video samples by MVF. Tap any video to watch it with sound, then send us your song on WhatsApp.">
+<title>Credvert — Lyric Video Samples</title>
+<meta name="description" content="Lyric video samples by Credvert. Tap any video to watch it with sound.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#09090a">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/credvert-32.png">
+<link rel="icon" type="image/svg+xml" href="assets/credvert.svg">
+<link rel="apple-touch-icon" href="assets/credvert-180.png">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="MVF">
-<meta property="og:title" content="MVF — Lyric video samples">
-<meta property="og:description" content="Tap any sample to watch it with sound. Send your song on WhatsApp and get a sample in 24 hours.">
+<meta property="og:site_name" content="Credvert">
+<meta property="og:title" content="Credvert — Lyric video samples">
+<meta property="og:description" content="Tap any sample to watch it with sound. First sample of your song in 24 hours.">
 <meta property="og:url" content="https://founderssuiteservices-tech.github.io/mvf-lyrics/">
-<meta property="og:image" content="https://founderssuiteservices-tech.github.io/mvf-lyrics/assets/og.jpg">
+<meta property="og:image" content="https://founderssuiteservices-tech.github.io/mvf-lyrics/assets/og-credvert.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Frames from MVF lyric videos">
+<meta property="og:image:alt" content="Credvert · lyric video samples">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
   --bg:#09090a; --ink:#f3f0e8;
   --ink-2:rgba(243,240,232,.68); --ink-3:rgba(243,240,232,.44); --ink-4:rgba(243,240,232,.16);
   --line:rgba(243,240,232,.11); --line-2:rgba(243,240,232,.22);
-  --lime:#d0fe17; --on-lime:#0b0c05;
+  --lime:#7fee63; --on-lime:#111;
   --serif:"Bodoni Moda","Bodoni 72","Didot",Georgia,serif;
   --sans:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
   --mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
@@ -54,21 +55,12 @@ main,footer{position:relative;z-index:1}
 .top.scrolled{background:rgba(9,9,10,.76);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);border-color:var(--line)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
 .brand{display:flex;align-items:center;gap:10px}
-.brand img{width:34px;height:34px;border-radius:9px}
+.brand svg{width:34px;height:34px;flex:none}
 .brand b{font-weight:750;font-size:17px;letter-spacing:-.02em}
 .brand small{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding-left:10px;border-left:1px solid var(--line-2);line-height:1.2}
 .nav{display:none;gap:28px;font-size:14px;color:var(--ink-2)}
 .nav a:hover{color:var(--ink)}
 @media(min-width:900px){.nav{display:flex}}
-
-/* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:48px;padding:0 22px;border-radius:999px;font-weight:650;font-size:15px;letter-spacing:-.01em;white-space:nowrap;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
-.btn svg{width:18px;height:18px;flex:none}
-.btn-lime{background:var(--lime);color:var(--on-lime)}
-.btn-lime:hover{transform:translateY(-2px);box-shadow:0 14px 40px -12px rgba(208,254,23,.6)}
-.btn-sm{height:38px;padding:0 15px;font-size:13.5px;gap:7px}
-.btn-sm svg{width:15px;height:15px}
-.btn-lg{height:56px;padding:0 28px;font-size:16.5px}
 
 /* hero: short, so the samples are on the first screen */
 .hero{padding-top:clamp(88px,11vh,124px)}
@@ -86,8 +78,6 @@ h1 em{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:
 .hero-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 28px;margin-top:clamp(14px,1.8vw,22px)}
 .lead{font-size:clamp(15px,1.25vw,18px);color:var(--ink-2);max-width:66ch;text-wrap:balance}
 .lead b{color:var(--ink);font-weight:600}
-.hero-row .btn{display:none}
-@media(min-width:720px){.hero-row .btn{display:inline-flex}}
 .specs{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(16px,2.2vw,28px);border-block:1px solid var(--line)}
 .specs div{padding:12px 12px 12px 0}
 .specs dt{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
@@ -109,15 +99,11 @@ h1 em{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:
 .pb svg{width:36%;height:36%;margin-left:9%}
 .tile:hover .pb,.tile:focus-visible .pb{background:var(--lime);color:var(--on-lime);border-color:var(--lime);transform:scale(1.08)}
 .tag{position:absolute;left:clamp(6px,.9vw,14px);top:clamp(6px,.9vw,14px);z-index:2;font-family:var(--mono);font-size:clamp(8.5px,.75vw,10.5px);letter-spacing:.12em;text-transform:uppercase;color:#fff;padding:4px 8px;border-radius:999px;background:rgba(12,12,12,.55);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2)}
-.next{background:var(--lime);color:var(--on-lime);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(11px,2vw,28px)}
+/* end card in the brand colours: the Credvert mark + one line */
+.next{background:var(--lime);color:var(--on-lime);display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:clamp(11px,2vw,28px);cursor:default}
 .next::after{display:none}
+.next .mk{height:clamp(30px,6.2vw,92px);width:auto;aspect-ratio:207/328.5}
 .next b{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(19px,3.4vw,52px);line-height:1;letter-spacing:-.02em}
-.next span{display:flex;align-items:center;gap:7px;font-weight:650;font-size:clamp(10.5px,1.15vw,16px);letter-spacing:-.01em}
-.next svg{width:1.25em;height:1.25em;flex:none}
-.next:hover{filter:brightness(1.05)}
-.next b,.next span{position:relative;z-index:1}
-.nsq{position:absolute;left:0;right:0;top:34%;width:100%;height:46%;overflow:visible;pointer-events:none}
-.nsq path{fill:none;stroke:var(--on-lime);stroke-opacity:.12;stroke-width:9;stroke-linecap:round}
 
 /* reels */
 .reels-sec{padding-bottom:clamp(48px,7vw,100px)}
@@ -145,7 +131,7 @@ h1 em{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:
 .num::after{content:".";color:var(--lime)}
 .steps h3{font-size:clamp(17px,1.5vw,21px);font-weight:650;letter-spacing:-.02em;line-height:1.2}
 .steps p{color:var(--ink-2);font-size:15px}
-.chip{justify-self:start;margin-top:6px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);border:1px solid rgba(208,254,23,.4);border-radius:999px;padding:5px 11px}
+.chip{justify-self:start;margin-top:6px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);border:1px solid rgba(127,238,99,.4);border-radius:999px;padding:5px 11px}
 .ready{margin-top:clamp(22px,3vw,34px);font-size:14.5px;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
 .ready b{font-family:var(--mono);font-weight:400;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
 .ready span{display:flex;align-items:center;gap:8px}
@@ -153,23 +139,16 @@ h1 em{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:
 
 /* closing cta */
 .cta{position:relative;padding-block:clamp(72px,11vw,150px);text-align:center;overflow:hidden;border-top:1px solid var(--line)}
-.cta::before{content:"";position:absolute;left:50%;top:58%;width:min(1000px,140vw);aspect-ratio:2/1;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(208,254,23,.11),rgba(208,254,23,0));pointer-events:none}
+.cta::before{content:"";position:absolute;left:50%;top:58%;width:min(1000px,140vw);aspect-ratio:2/1;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(127,238,99,.11),rgba(127,238,99,0));pointer-events:none}
 .cta .wrap{position:relative}
 .cta h2{font-weight:680;font-size:clamp(36px,6.4vw,96px);line-height:.95;letter-spacing:-.05em}
 .cta h2 em{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:-.025em;font-size:1.06em}
-.cta p{margin:18px auto 0;color:var(--ink-2);font-size:clamp(16px,1.4vw,19px);max-width:40ch}
-.cta .btn{margin-top:28px}
-.cta .num-line{margin-top:16px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--ink-3)}
+.cta p{margin:18px auto 0;color:var(--ink-2);font-size:clamp(16px,1.4vw,19px);max-width:40ch;text-wrap:balance}
 
 .foot{border-top:1px solid var(--line);padding-block:24px 36px}
 .foot .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
 .foot p{font-size:13px;color:var(--ink-3)}
-.foot .brand img{width:28px;height:28px;border-radius:8px}
-
-.fab{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:40;width:56px;height:56px;border-radius:50%;background:var(--lime);color:var(--on-lime);display:grid;place-items:center;box-shadow:0 12px 34px -8px rgba(0,0,0,.7),0 0 0 6px rgba(208,254,23,.12);transform:translateY(120px) scale(.8);opacity:0;transition:transform .5s var(--ease),opacity .4s}
-.fab svg{width:26px;height:26px}
-.fab.on{transform:none;opacity:1}
-@media(min-width:900px){.fab{display:none}}
+.foot .brand svg{width:28px;height:28px}
 
 /* player */
 dialog.player{position:fixed;inset:0;margin:auto;width:min(1180px,calc(100vw - 2*var(--pad)));max-width:none;max-height:none;background:transparent;border:0;padding:0;color:var(--ink);overflow:visible}
@@ -177,16 +156,14 @@ dialog.player::backdrop{background:rgba(6,6,7,.92);-webkit-backdrop-filter:blur(
 dialog.player[open] .pl{animation:rise .45s var(--ease)}
 @keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985)}}
 .pl-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:12px;min-height:44px}
-.pl-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
 .pl-x{margin-left:auto;flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;transition:background .2s,border-color .2s}
 .pl-x:hover{background:rgba(255,255,255,.06);border-color:rgba(243,240,232,.5)}
 .pl-x svg{width:18px;height:18px}
 .pl-stage{position:relative;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:16/9;box-shadow:0 40px 120px -40px rgba(0,0,0,.9)}
 .pl-stage video,.pl-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:contain;background:#000}
-.pl-foot{display:flex;justify-content:center;margin-top:16px}
-dialog.player.v{width:min(440px,calc((100svh - 190px) * 9 / 16),calc(100vw - 2*var(--pad)))}
+dialog.player.v{width:min(440px,calc((100svh - 120px) * 9 / 16),calc(100vw - 2*var(--pad)))}
 dialog.player.v .pl-stage{aspect-ratio:9/16}
-@media(max-width:600px){dialog.player{width:calc(100vw - 20px)}.pl-foot .btn{width:100%}}
+@media(max-width:600px){dialog.player{width:calc(100vw - 20px)}}
 
 /* load-in */
 .js [data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
@@ -207,27 +184,21 @@ dialog.player.v .pl-stage{aspect-ratio:9/16}
 <body>
 <header class="top" id="top-bar">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="MVF, back to top">
-      <img src="assets/logo-96.png" alt="" width="34" height="34">
-      <b>MVF</b><small>Lyric<br>videos</small>
+    <a class="brand" href="#top" aria-label="Credvert, back to top">
+      <svg viewBox="0 0 512 512" aria-hidden="true"><use href="#cv"/></svg>
+      <b>Credvert</b><small>Lyric<br>videos</small>
     </a>
     <nav class="nav" aria-label="Sections"><a href="#samples">Samples</a><a href="#reels">Reels</a><a href="#process">How it works</a></nav>
-    <a class="btn btn-lime btn-sm" data-wa href="https://wa.me/917977231182?text=Hi%20MVF!%20I%20saw%20your%20lyric%20video%20samples.%20I%20want%20a%20lyric%20video%20for%20my%20song." target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>WhatsApp
-    </a>
   </div>
 </header>
 
 <main id="top">
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow"><span class="rec"></span>MVF · Lyric video studio</p>
+      <p class="eyebrow"><span class="rec"></span>Credvert · Lyric video studio</p>
       <h1 aria-label="Lyric videos that feel like cinema."><span class="w" style="--i:0">Lyric</span> <span class="w" style="--i:1">videos</span> <span class="w" style="--i:2">that</span> <span class="w" style="--i:3">feel</span> <span class="w" style="--i:4">like</span> <em><span class="w" style="--i:5">cinema.</span><svg class="sq" viewBox="0 0 240 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 18 C 26 4, 44 28, 70 15 S 112 3, 136 16 S 182 28, 206 13 S 230 8, 236 12"/></svg></em></h1>
       <div class="hero-row">
         <p class="lead"><b>Tap any sample to watch it with sound.</b> Like a style? Send us your song.</p>
-        <a class="btn btn-lime" data-wa href="https://wa.me/917977231182?text=Hi%20MVF!%20I%20saw%20your%20lyric%20video%20samples.%20I%20want%20a%20lyric%20video%20for%20my%20song." target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>Send your song
-        </a>
       </div>
       <dl class="specs">
         <div><dt>First sample</dt><dd>In 24 hours</dd></div>
@@ -251,31 +222,30 @@ dialog.player.v .pl-stage{aspect-ratio:9/16}
           <span class="tag">Reference ↗</span>
           <span class="pb"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.2v9.6L10.4 6z"/></svg></span>
         </a>
-        <button class="tile" data-play data-video="media/kinetic.mp4" data-poster="media/kinetic-poster.webp" data-wa-label="the kinetic-lyrics sample" aria-label="Play sample: kinetic lyrics, with sound">
+        <button class="tile" data-play data-video="media/kinetic.mp4" data-poster="media/kinetic-poster.webp" aria-label="Play sample: kinetic lyrics, with sound">
           <video data-auto data-src="media/kinetic-loop.mp4" data-src-sm="media/kinetic-loop-sm.mp4" poster="media/kinetic-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="pb"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.2v9.6L10.4 6z"/></svg></span>
         </button>
-        <button class="tile" data-play data-video="media/zamane.mp4" data-poster="media/zamane-poster.webp" data-wa-label="the illustrated love-story sample (Zamane Se Juda)" aria-label="Play sample: illustrated love story, with sound">
+        <button class="tile" data-play data-video="media/zamane.mp4" data-poster="media/zamane-poster.webp" aria-label="Play sample: illustrated love story, with sound">
           <video data-auto data-src="media/zamane-loop.mp4" data-src-sm="media/zamane-loop-sm.mp4" poster="media/zamane-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="pb"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.2v9.6L10.4 6z"/></svg></span>
         </button>
-        <button class="tile" data-play data-video="media/lie.mp4" data-poster="media/lie-poster.webp" data-wa-label="the photo-story sample (Love Me Like A Lie)" aria-label="Play sample: cinematic photo story, with sound">
+        <button class="tile" data-play data-video="media/lie.mp4" data-poster="media/lie-poster.webp" aria-label="Play sample: cinematic photo story, with sound">
           <video data-auto data-src="media/lie-loop.mp4" data-src-sm="media/lie-loop-sm.mp4" poster="media/lie-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="pb"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.2v9.6L10.4 6z"/></svg></span>
         </button>
-        <button class="tile" data-play data-video="media/empty.mp4" data-poster="media/empty-poster.webp" data-wa-label="the seasons photo-story sample (Empty Seasons)" aria-label="Play sample: seasons photo story, with sound">
+        <button class="tile" data-play data-video="media/empty.mp4" data-poster="media/empty-poster.webp" aria-label="Play sample: seasons photo story, with sound">
           <video data-auto data-src="media/empty-loop.mp4" data-src-sm="media/empty-loop-sm.mp4" poster="media/empty-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="pb"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.2v9.6L10.4 6z"/></svg></span>
         </button>
-        <button class="tile" data-play data-video="media/zara.mp4" data-poster="media/zara-poster.webp" data-wa-label="the duotone sample (Zara Zara)" aria-label="Play sample: duotone footage, with sound">
+        <button class="tile" data-play data-video="media/zara.mp4" data-poster="media/zara-poster.webp" aria-label="Play sample: duotone footage, with sound">
           <video data-auto data-src="media/zara-loop.mp4" data-src-sm="media/zara-loop-sm.mp4" poster="media/zara-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="pb"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.2v9.6L10.4 6z"/></svg></span>
         </button>
-        <a class="tile next" data-wa href="https://wa.me/917977231182?text=Hi%20MVF!%20I%20saw%20your%20lyric%20video%20samples.%20I%20want%20a%20lyric%20video%20for%20my%20song." target="_blank" rel="noopener">
-          <svg class="nsq" viewBox="0 0 240 60" preserveAspectRatio="none" aria-hidden="true"><path d="M-6 40 C 26 8, 44 58, 74 30 S 116 2, 140 32 S 186 62, 210 26 S 238 14, 250 22"/></svg>
+        <div class="tile next">
+          <svg class="mk" viewBox="0 0 207 328.5" aria-hidden="true"><use href="#cv-c"/></svg>
           <b>Your song next?</b>
-          <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>Send it on WhatsApp →</span>
-        </a>
+        </div>
       </div>
     </div>
   </section>
@@ -289,15 +259,15 @@ dialog.player.v .pl-stage{aspect-ratio:9/16}
           <h2>Cut for <em>Reels.</em></h2>
           <p>The best part of the video, re-framed for Instagram and YouTube Shorts.</p>
         </div>
-        <button class="tile v" data-play data-v="1" data-video="media/lie-reel.mp4" data-poster="media/lie-reel-poster.webp" data-wa-label="the chorus reel (Love Me Like A Lie)" aria-label="Play reel sample with sound">
+        <button class="tile v" data-play data-v="1" data-video="media/lie-reel.mp4" data-poster="media/lie-reel-poster.webp" aria-label="Play reel sample with sound">
           <video data-auto data-src="media/lie-reel-loop.mp4" data-src-sm="media/lie-reel-loop-sm.mp4" poster="media/lie-reel-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="pb"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.2v9.6L10.4 6z"/></svg></span>
         </button>
-        <button class="tile v" data-play data-v="1" data-video="media/empty-reel.mp4" data-poster="media/empty-reel-poster.webp" data-wa-label="the final-chorus reel (Empty Seasons)" aria-label="Play reel sample with sound">
+        <button class="tile v" data-play data-v="1" data-video="media/empty-reel.mp4" data-poster="media/empty-reel-poster.webp" aria-label="Play reel sample with sound">
           <video data-auto data-src="media/empty-reel-loop.mp4" data-src-sm="media/empty-reel-loop-sm.mp4" poster="media/empty-reel-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="pb"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.2v9.6L10.4 6z"/></svg></span>
         </button>
-        <button class="tile v" data-play data-v="1" data-video="media/zamane-reel.mp4" data-poster="media/zamane-reel-poster.webp" data-wa-label="the release-teaser reel (Zamane Se Juda)" aria-label="Play reel sample with sound">
+        <button class="tile v" data-play data-v="1" data-video="media/zamane-reel.mp4" data-poster="media/zamane-reel-poster.webp" aria-label="Play reel sample with sound">
           <video data-auto data-src="media/zamane-reel-loop.mp4" data-src-sm="media/zamane-reel-loop-sm.mp4" poster="media/zamane-reel-poster.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="pb"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1.2v9.6L10.4 6z"/></svg></span>
         </button>
@@ -309,7 +279,7 @@ dialog.player.v .pl-stage{aspect-ratio:9/16}
     <div class="wrap" data-reveal>
       <p class="label"><b>How it works</b></p>
       <ol class="steps">
-        <li><span class="num">1</span><h3>Send your song</h3><p>Share the track and lyrics on WhatsApp, with the mood you want — or let us pitch one.</p></li>
+        <li><span class="num">1</span><h3>Send your song</h3><p>Share the track and lyrics, with the mood you want — or let us pitch one.</p></li>
         <li><span class="num">2</span><h3>Approve a sample</h3><p>We make the opening ~20 seconds first, so you see the look before the full video.</p><span class="chip">In 24 hours</span></li>
         <li><span class="num">3</span><h3>Get the video + reel</h3><p>The full lyric video for YouTube, plus a vertical cut for Reels and Shorts.</p><span class="chip">About 2 days</span></li>
       </ol>
@@ -320,61 +290,45 @@ dialog.player.v .pl-stage{aspect-ratio:9/16}
   <section class="cta" id="start">
     <div class="wrap" data-reveal>
       <h2>Your song deserves<br>to be <em>seen.</em></h2>
-      <p>Send it on WhatsApp and we’ll start with a sample of your song.</p>
-      <a class="btn btn-lime btn-lg" data-wa href="https://wa.me/917977231182?text=Hi%20MVF!%20I%20saw%20your%20lyric%20video%20samples.%20I%20want%20a%20lyric%20video%20for%20my%20song." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>Send your song on WhatsApp
-      </a>
-      <p class="num-line"><a href="https://wa.me/917977231182" target="_blank" rel="noopener">+91 79772 31182</a></p>
+      <p>Reply with your song and we’ll send the first sample in 24 hours.</p>
     </div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <a class="brand" href="#top"><img src="assets/logo-96.png" alt="" width="28" height="28"><b>MVF</b></a>
+    <a class="brand" href="#top"><svg viewBox="0 0 512 512" aria-hidden="true"><use href="#cv"/></svg><b>Credvert</b></a>
     <p>Tiles marked “Reference” are other artists’ official videos on YouTube, shown as style examples.</p>
-    <p>© 2026 MVF</p>
+    <p>© 2026 Credvert</p>
   </div>
 </footer>
-
-<a class="fab" id="fab" data-wa href="https://wa.me/917977231182?text=Hi%20MVF!%20I%20saw%20your%20lyric%20video%20samples.%20I%20want%20a%20lyric%20video%20for%20my%20song." target="_blank" rel="noopener" aria-label="Send your song on WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>
-</a>
 
 <dialog class="player" id="player" aria-label="Sample player">
   <div class="pl">
     <div class="pl-top">
-            <button class="pl-x" id="pl-x" aria-label="Close video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <button class="pl-x" id="pl-x" aria-label="Close video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div class="pl-stage" id="pl-stage"></div>
-    <div class="pl-foot">
-      <a class="btn btn-lime" id="pl-cta" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg><span id="pl-cta-t">I want this style</span></a>
-    </div>
   </div>
 </dialog>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41"/></symbol>
+  <symbol id="cv" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#7fee63"/><g fill="#111"><rect x="187" y="92" width="173" height="52.5" rx="5"/><rect x="153" y="161" width="69" height="52.5" rx="5"/><rect x="291" y="161" width="69" height="52.5" rx="5"/><rect x="153" y="230" width="69" height="52.5" rx="5"/><rect x="153" y="299" width="69" height="52.5" rx="5"/><rect x="291" y="299" width="69" height="52.5" rx="5"/><rect x="187" y="368" width="138" height="52.5" rx="5"/></g></symbol>
+  <symbol id="cv-c" viewBox="153 92 207 328.5"><g fill="currentColor"><rect x="187" y="92" width="173" height="52.5" rx="5"/><rect x="153" y="161" width="69" height="52.5" rx="5"/><rect x="291" y="161" width="69" height="52.5" rx="5"/><rect x="153" y="230" width="69" height="52.5" rx="5"/><rect x="153" y="299" width="69" height="52.5" rx="5"/><rect x="291" y="299" width="69" height="52.5" rx="5"/><rect x="187" y="368" width="138" height="52.5" rx="5"/></g></symbol>
 </svg>
 
 <script>
 (() => {
   const root = document.documentElement;
   root.classList.replace('no-js', 'js');
-  const WA = 'https://wa.me/917977231182?text=';
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const saveData = !!(navigator.connection && navigator.connection.saveData);
   const dlg = document.getElementById('player'), stage = document.getElementById('pl-stage');
   const $ = id => document.getElementById(id);
 
-  /* header + floating whatsapp */
-  const bar = $('top-bar'), fab = $('fab'), cta = $('start');
-  let ctaVisible = false;
-  new IntersectionObserver(([e]) => { ctaVisible = e.isIntersecting; onScroll(); }).observe(cta);
-  function onScroll() {
-    bar.classList.toggle('scrolled', scrollY > 16);
-    fab.classList.toggle('on', scrollY > 360 && !ctaVisible && !dlg.open);
-  }
+  /* header */
+  const bar = $('top-bar');
+  const onScroll = () => bar.classList.toggle('scrolled', scrollY > 16);
   addEventListener('scroll', onScroll, { passive: true });
 
   /* reveal */
@@ -411,13 +365,9 @@ dialog.player.v .pl-stage{aspect-ratio:9/16}
     v.poster = d.poster || ''; v.src = d.video;
     stage.appendChild(v);
     v.play().catch(() => {});
-    const what = d.v === '1' ? 'a reel like this' : 'a lyric video like this';
-    $('pl-cta').href = WA + encodeURIComponent(`Hi MVF! I liked ${d.waLabel || 'a sample'} on your samples page. I want ${what} for my song.`);
-    $('pl-cta-t').textContent = d.v === '1' ? 'I want a reel like this' : 'I want this style';
     document.querySelectorAll('video[data-auto]').forEach(v => v.pause());
     root.style.overflow = 'hidden';
     dlg.showModal();
-    fab.classList.remove('on');
   }
   document.querySelectorAll('[data-play]').forEach(b => b.addEventListener('click', () => open(b)));
   $('pl-x').addEventListener('click', () => dlg.close());
@@ -428,7 +378,6 @@ dialog.player.v .pl-stage{aspect-ratio:9/16}
     stage.innerHTML = '';
     root.style.overflow = '';
     if (!reduce && !saveData) visible.forEach(v => v.play().catch(() => {}));
-    onScroll();
   });
   onScroll();
 })();
